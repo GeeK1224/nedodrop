@@ -1,6 +1,22 @@
 import flet as ft
 import views
 
+# files = []
+# registration_device_name = ft.TextField(label='Device Name', width=400)
+# settings_device_name = ft.TextField(label='Device Name', width=400, value=page.client_storage.get("device_name"))
+# image_reg = ft.Image(src="icon.png", width=100, height=100)
+# image_icon = ft.Image(src="icon.png", width=40, height=40)
+
+# contact_sharing = ft.Switch(label="Do you want to use contact sharing?")
+# pick_files_dialog = ft.FilePicker(on_result=pick_files_result)
+# selected_files = ft.Text()
+# selected_file_object = ft.Row(
+#     [
+#         selected_files,
+#         ft.IconButton(ft.icons.DELETE, on_click=delete_picked_file)
+#     ]
+# )
+
 
 if __name__ == "__main__":
 
@@ -38,9 +54,6 @@ if __name__ == "__main__":
             top_view = page.views[-1]
             page.go(top_view.route)
 
-        page.add(
-
-        )
         page.on_route_change = route_change
         page.on_view_pop = view_pop
         page.go(page.route)
