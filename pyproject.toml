@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "nedodrop"
+version = "0.1.0"
+description = ""
+authors = ["nedogeek <urunbaev.timur@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11, <3.13"
+flet = "^0.19.0"
+bleak = "^0.21.1"
+bless = "^0.2.5"
+tqdm = "^4.66.1"
+loguru = "^0.7.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
